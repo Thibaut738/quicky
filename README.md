@@ -1,3 +1,5 @@
+![Quicky Icon](icon/monster.ico)
+
 # Quicky - Fast SSH Connections with PuTTY
 
 **Quicky** is a simple, open-source graphical user interface (GUI) for quickly establishing SSH connections using PuTTY. With Quicky, users can save connection settings and avoid repeatedly entering IP addresses, usernames, and passwords, all from an easy-to-use interface.
