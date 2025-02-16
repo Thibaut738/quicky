@@ -4,7 +4,7 @@ import os
 import subprocess
 import ctypes
 
-#build command: & "C:\Users\Gebruiker\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts\pyinstaller.exe" --noconsole --icon="C:\Users\Gebruiker\Documents\test\putty\icon\monster.ico" "C:\Users\Gebruiker\Documents\test\python scripts\quicky.py"
+# build command: python -m PyInstaller --onefile --noconsole  --collect-binaries "tkinter"  --icon="C:\Users\Thiba\Documents\Quicky\quicky\icon\monster.ico" quicky.py
 
 # Hide console window
 ctypes.windll.kernel32.FreeConsole()
@@ -55,7 +55,7 @@ def update_main_form():
     username_entry.insert(0, default_username)
     password_entry.delete(0, tk.END)
     password_entry.insert(0, default_password)
-    
+
 # Function to open settings dialog
 def open_settings_dialog():
     settings_window = tk.Toplevel(root)
@@ -115,7 +115,6 @@ def open_settings_dialog():
     # Save button with larger size
     save_button = tk.Button(settings_window, text="Save", command=save_and_close, width=10, height=8)
     save_button.pack(pady=10, padx=10, ipadx=10, ipady=10)
-
 
 
 # Main GUI window
